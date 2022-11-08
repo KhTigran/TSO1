@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/LogoFooter.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ТСО</title>
+</head>
+<body>
+	<div class="wrapper wrapper-index">
+		
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo"><img src="img/Logo.svg" alt="Logo"></a>
+					<nav class="menu"> 
+						<a href="index.html" class="menu__link active">Главная</a>
+						<a href="audiences.html" class="menu__link">Аудитории</a>
+						<a href="contact.html" class="menu__link">Контакты</a>
+					</nav>
+					<a class="button open-popup" href="#">Забронировать</a>
+						<div class="popup__bg"> 
+							<form action="vendor/booking.php" method='post' enctype="multipart/form-data" class="popup">
+								<img src="img/close.svg" class="close-popup">
+								<h2 class="popup__title">ЗАБРОНИРОВАТЬ</h2>
+								<label>
+									<input class="popup__input" type="text" name="name" placeholder="ФИО" required>
+								</label>
+								<label>
+									<input class="popup__input" type="tel" name="tel" placeholder="Номер телефона" required>
+								</label>
+								<label>
+									<input class="popup__input" type="text" name="audnum" placeholder="Номер аудитории" required>
+								</label>
+								<label>
+									<input class="popup__input popup__date" type="date" id="date" name="date" required>
+								</label>
+								
+								
+								<button class="button"	type="submit">Отправить</button>
+							</form>
+						</div> 
+				</div>			
+			</div>		
+	</header>	
+		<section id="main" class="main">
+				<div class="container">
+					<div class="main__inner">
+						<div class="offer">
+							<h1 class="offer__title">Отдел технических средств обучения МГТУ им. Н.Э. Баумана</h1>
+							<p class="offer__text indent">Отдел технических средств обучения (далее - ТСО) является структурным подразделением Университета, обеспечивающим планирование, управление, контроль и совершенствование
+								организационно-методических и технических процессов по применению мультимедийных технологий в учебном процессе. </p>
+							<a href="#task" class="offer__button">
+								<img src="img/Button.svg" alt="">
+							</a>
+						</div>
+					</div>	
+					
+				</div>
+		</section>
+
+
+		<section id="task" class="apartments">
+			<div class="container">
+				<h2 class="task__title task-title">Задачи отдела ТСО</h2>
+					<ul class="task__list">
+						<li class="task__point">
+							<div class="task__icon">
+								<img src="img/icon.svg" alt="" class="task__img">
+							</div>
+							<p class="task__text">
+							Обеспечение работоспособности используемого в образовательном процессе оборудования, находящегося на балансе подразделений факультета, согласно разработанным отделом ТСО нормативными документами
+							</p>
+						</li>
+
+						<li class="task__point">
+							<div class="task__icon">
+								<img src="img/icon.svg" alt="" class="task__img">
+							</div>
+							<p class="task__text">
+							Обучение учебно-вспомогательного и профессорско-преподавательского состава факультета навыкам пользования техническими средствами обучения
+							</p>
+						</li>
+
+						<li class="task__point task-indent">
+							<div class="task__icon">
+								<img src="img/icon.svg" alt="" class="task__img">
+							</div>
+							<p class="task__text">
+							Техническая поддержка ведения образовательного процесса в МГТУ им. Н.Э. Баумана
+							</p>
+						</li>
+					</ul>	
+
+				
+
+			</div>
+		</section>
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<a href="index.html">
+						<img src="img/LogoFooter.svg" alt="logo" class="footer__logo">
+					</a>	
+					<div class="footer__links">		
+						<a href="#" class="footer__link">Политика конфиденциальности</a>
+						<a href="#" class="footer__link">Отдел ТСО УИ-ВЦ МГТУ им.Н.Э.Баумана</a>
+						<a href="https://bmstu.ru/" target="_blank" class="footer__link">МГТУ им.Н.Э.Баумана</a>
+					</div>	
+				</div>	
+			</div>		
+		</footer>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/LogoFooter.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ТСО</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+            
+        <header id="header" class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="index.html" class="logo"><img src="img/Logo.svg" alt="Logo"></a>
+                        <nav class="menu"> 
+                            <a href="index.html" class="menu__link">Главная</a>
+                            <a href="audiences.html" class="menu__link active">Аудитории</a>
+                            <a href="contact.html" class="menu__link">Контакты</a>
+                        </nav>
+                        <a class="button open-popup" href="#">Забронировать</a>
+							<div class="popup__bg"> 
+								<form action="vendor/booking.php" method='post' enctype="multipart/form-data" class="popup">
+									<img src="img/close.svg" class="close-popup">
+									<h2 class="popup__title">ЗАБРОНИРОВАТЬ</h2>
+									<label>
+										<input class="popup__input" type="text" name="name" placeholder="ФИО" required>
+									</label>
+									<label>
+										<input class="popup__input" type="tel" name="tel" placeholder="Номер телефона" required>
+									</label>
+									<label>
+										<input class="popup__input" type="text" name="audnum" placeholder="Номер аудитории" required>
+									</label>
+									<label>
+										<input class="popup__input popup__date" type="date" id="date" name="date" required>
+									</label>
+									
+									
+									<button class="button"	type="submit">Отправить</button>
+								</form>
+							</div> 
+                    </div>			
+                </div>		
+        </header>	
+        <section id="audiences" class="audiences">
+            <div class="container">
+                <div class="audiences__inner audiences-indent"> 
+                        <h2 class="audiences__title">
+                            Аудитории
+                        </h2>
+                        <div class="audiences__row">
+                            <div class="audiences__cart audiences-cart-indent">  
+                                <h3 class="audiences__subtitle">
+                                    Отдел ТСО
+                                </h3>
+                                <div class="audiences__info">
+                                    <ul class="audiences__list">
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=1">501Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=2">502Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=3">513Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=4">515Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=5">533</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=6">518Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=7">520Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=8">222Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=9">224Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=10">226Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=11">228Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=12">544Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=13">708Л</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=14">744Л</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="audiences__cart audiences-cart-indent">  
+                                <h3 class="audiences__subtitle">
+                                    Лаборатория ЛАТСО обслуживание мероприятий в конференц-зале УЛК и аудиториях
+                                </h3>
+                                <div class="audiences__info">
+                                    <ul class="audiences__list">
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=15">212</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=16">216</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=17">218</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=18">220</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=19">224</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=20">226</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=21">228</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=22">544</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=23">708</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=24">744</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="audiences__cart">  
+                                <h3 class="audiences__subtitle">
+                                    Лаборатория ЛТО (обслуживание мероприятий в зале ученого совета ГУК и аудиториях
+                                </h3>
+                                <div class="audiences__info">
+                                    <ul class="audiences__list">
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=25">316</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=26">341а</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=27">420</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=28">422</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=29">424</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=30">426</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=31">430</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=32">432</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=33">433</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=5">533</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=34">417Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=35">519Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=36">521Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=37">523Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=38">527Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=1">501Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=2">502Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=39">531Ю</a></li>
+                                        <li class="audiences__list-item"><a href="cabinet.php?id=4">515Ю</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    
+                </div> 	
+                
+            </div>
+    </section>
+
+
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="index.html">
+                        <img src="img/LogoFooter.svg" alt="logo" class="footer__logo">	
+                    </a>
+                    <div class="footer__links">		
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Отдел ТСО УИ-ВЦ МГТУ им.Н.Э.Баумана</a>
+                        <a href="https://bmstu.ru/" target="_blank" class="footer__link">МГТУ им.Н.Э.Баумана</a>
+                    </div>	
+                </div>	
+            </div>		
+        </footer>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

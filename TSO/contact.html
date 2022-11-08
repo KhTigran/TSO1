@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/LogoFooter.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ТСО</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+            
+        <header id="header" class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="index.html" class="logo"><img src="img/Logo.svg" alt="Logo"></a>
+                        <nav class="menu"> 
+                            <a href="index.html" class="menu__link">Главная</a>
+                            <a href="audiences.html" class="menu__link">Аудитории</a>
+                            <a href="contact.html" class="menu__link active">Контакты</a>
+                        </nav>
+                        <a class="button open-popup" href="#">Забронировать</a>
+							<div class="popup__bg"> 
+								<form action="vendor/booking.php" method='post' enctype="multipart/form-data" class="popup">
+									<img src="img/close.svg" class="close-popup">
+									<h2 class="popup__title">ЗАБРОНИРОВАТЬ</h2>
+									<label>
+										<input class="popup__input" type="text" name="name" placeholder="ФИО" required>
+									</label>
+									<label>
+										<input class="popup__input" type="tel" name="tel" placeholder="Номер телефона" required>
+									</label>
+									<label>
+										<input class="popup__input" type="text" name="audnum" placeholder="Номер аудитории" required>
+									</label>
+									<label>
+										<input class="popup__input popup__date" type="date" id="date" name="date" required>
+									</label>
+									
+									
+									<button class="button"	type="submit">Отправить</button>
+								</form>
+							</div> 
+                    </div>			
+                </div>		
+        </header>	
+        <section id="contact" class="contact">
+                <div class="container">
+                    <div class="contact__inner contact-indent"> 
+                            <h2 class="contact__title">
+                                Контакты
+                            </h2>
+                        <div class="contact__line">
+                            <div class="contact__row">
+                                <div class="contact__cart contact-cart-indent">      
+                                    <h3 class="contact__subtitle">
+                                        Начальник отдела ТСО
+                                    </h3>
+                                    <div class="contact__info">
+                                        <p class="contact-info-indent">Дербенёв Евгений Викторович</p>
+                                        <p class="contact-info-indent">+7 (499)263-64-77</p>
+                                        <p class="contact-info-indent">derbenev@bmstu.ru</p>
+                                        <p>ауд. 433а(ГУК)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__cart">  
+                                    <h3 class="contact__subtitle">
+                                        Лаборатория ЛТО
+                                    </h3>
+                                    <div class="contact__info">
+                                        <p class="contact-info-indent">Аксёнов Николай Васильевич</p>
+                                        <p class="contact-info-indent">+7 (499)263-64-77</p>
+                                        <p class="contact-info-indent">kurakov@bmstu.ru</p>
+                                        <p>ауд.502Ю(ГУК)</p>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="contact__row">
+                                <div class="contact__cart contact-cart-indent">  
+                                    <h3 class="contact__subtitle">
+                                        Заместитель начальника отдела ТСО
+                                    </h3>
+                                    <div class="contact__info">
+                                        <p class="contact-info-indent">Малыхина Ольга Юрьевна</p>
+                                        <p class="contact-info-indent">+7 (499)263-64-77</p>
+                                        <p class="contact-info-indent">olgamalihina@bmstu.ru</p>
+                                        <p>ауд. 302(УЛК)</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact__cart">  
+                                    <h3 class="contact__subtitle">
+                                        Лаборатория ЛАТСО 
+                                    </h3>
+                                    <div class="contact__info">
+                                        <p class="contact-info-indent">Ткачёв Виктор Фёдорович</p>
+                                        <p class="contact-info-indent">+7 (499)263-64-77</p>
+                                        <p class="contact-info-indent">tso@bmstu.ru</p>
+                                        <p>ауд. 302(УЛК)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 	
+                    
+                </div>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="index.html">
+                        <img src="img/LogoFooter.svg" alt="logo" class="footer__logo">	
+                    </a>
+                    <div class="footer__links">		
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Отдел ТСО УИ-ВЦ МГТУ им.Н.Э.Баумана</a>
+                        <a href="https://bmstu.ru/" target="_blank" class="footer__link">МГТУ им.Н.Э.Баумана</a>
+                    </div>	
+                </div>	
+            </div>		
+        </footer>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
